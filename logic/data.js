@@ -82,7 +82,7 @@ const templates = [
   },
   {
     id: 6,
-    title: "Saloon Template",
+    title: "Salon Template",
     category: "Beauty / Lifestyle",
     description: "A modern salon website template with online booking, service showcase, and elegant pricing layout.",
     features: [
@@ -98,3 +98,4 @@ const templates = [
   }
   
 ];
+
