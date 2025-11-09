@@ -9,7 +9,7 @@
           class="navbar-brand fw-bold d-flex align-items-center"
           href="index.html"
         >
-          <img src="assets/logo.png" alt="OrderMySite Logo" />
+          <img src="assets/images/logo.png" alt="OrderMySite Logo" />
           <span style="color: var(--primary)">Order</span
           ><span style="color: var(--accent)">MySite</span>
         </a>
@@ -23,7 +23,7 @@
         <div id="navMenu" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav align-items-center">
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#templates">Templates</a>
+              <a class="nav-link fw-semibold" href="templates.html">Templates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-semibold" href="#why">Why Us</a>
@@ -55,7 +55,7 @@ try{
     ordernav.innerHTML = `
 <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="assets/logo.png" alt="OrderMySite Logo">
+      <img src="assets/images/logo.png" alt="OrderMySite Logo">
       <span style="color: var(--primary);">Order</span><span style="color: var(--accent);">MySite</span>
     </a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -63,7 +63,7 @@ try{
     </button>
     <div id="navMenu" class="collapse navbar-collapse justify-content-end">
       <ul class="navbar-nav align-items-center">
-        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#templates">Templates</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="templates.html">Templates</a></li>
         <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#why">Why Us</a></li>
         <a
                 class="nav-link fw-semibold"
