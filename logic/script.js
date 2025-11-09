@@ -21,7 +21,7 @@ if (listContainer) {
   let data = templates;
 
   if (currentPage === "index.html" || currentPage === "") {
-    data = templates.slice(0, 3);
+    data = templates.slice(3, 6);
   }
 
   listContainer.innerHTML = data
@@ -180,4 +180,5 @@ document.addEventListener("DOMContentLoaded", () => {
     selectBox.appendChild(newOpt);
   }
 });
+
 
