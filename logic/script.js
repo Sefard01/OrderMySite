@@ -89,7 +89,7 @@ if (listContainer) {
 }
 
 // ---------------------------------------
-// Preview Page
+// Preview Page Logic
 // ---------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   const box = document.querySelector(".preview-section");
@@ -140,3 +140,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// ---------------------------------------
+// Auto-Fill Category on order.html
+// ---------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const selectBox = document.getElementById("template_type");
+  if (!selectBox) return;
+
+  const selected = JSON.parse(localStorage.getItem("selectedTemplate"));
+  if (!selected) return;
+
+  const cat = selected.category.toLowerCase();
+
+  // Mapping rules
+  const map = [
+    { keyword: ["ecommerce", "shop", "store"], value: "E-commerce" },
+    { keyword: ["portfolio", "personal"], value: "Portfolio" },
+    { keyword: ["business", "agency", "corporate", "industrial"], value: "Business" },
+    { keyword: ["landing", "startup", "saas"], value: "Landing Page" }
+  ];
+
+  let matched = false;
+
+  for (let rule of map) {
+    if (rule.keyword.some(k => cat.includes(k))) {
+      selectBox.value = rule.value;
+      matched = true;
+      break;
+    }
+  }
+
+  // If nothing matched
+  if (!matched) {
+    const newOpt = document.createElement("option");
+    newOpt.value = selected.category;
+    newOpt.textContent = selected.category;
+    newOpt.selected = true;
+    selectBox.appendChild(newOpt);
+  }
+});
+
