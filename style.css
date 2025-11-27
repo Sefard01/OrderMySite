@@ -69,6 +69,10 @@
   }
 
   /* Template Preview Section */
+
+ #templates{
+    padding: 2rem;
+  }
   .preview-section {
     display: flex;
     flex-wrap: wrap;
@@ -219,4 +223,5 @@
   footer a:hover {
     color: var(--accent);
   }
+
 
