@@ -10,8 +10,8 @@
           href="index.html"
         >
           <img src="assets/images/logo.png" alt="OrderMySite Logo" />
-          <span style="color: var(--primary)">Order</span
-          ><span style="color: var(--accent)">MySite</span>
+          <span style="color: var(--primary);font-weight:bolder">Order</span
+          ><span style="color: var(--accent);font-weight:bolder">MySite</span>
         </a>
         <button
           class="navbar-toggler"
@@ -56,7 +56,7 @@ try{
 <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
       <img src="assets/images/logo.png" alt="OrderMySite Logo">
-      <span style="color: var(--primary);">Order</span><span style="color: var(--accent);">MySite</span>
+      <span style="color: var(--primary); font-weight:bolder ">Order</span><span style="color: var(--accent);  font-weight:bolder">MySite</span>
     </a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
