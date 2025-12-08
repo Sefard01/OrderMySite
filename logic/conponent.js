@@ -92,10 +92,12 @@ footer.innerHTML = `
         <p class="mb-1">&copy; 2025 OrderMySite. All Rights Reserved.</p>
         <p class="small">
           Made with <i class="bi bi-heart-fill text-danger"></i> by OrderMySite
-          Team
+          <a href="https://sefard01.github.io/Music-player-/" target="_blank" rel="noopener noreferrer">Team</a>.
+        
         </p>
       </div>
 `
+
 
 
 
